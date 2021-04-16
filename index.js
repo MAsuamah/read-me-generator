@@ -72,14 +72,53 @@ const questions = [
     name: 'confirmTest',
     message: 'Would you like to add test instructions?',
     default: true
-  },
-  {
-    type: 'input',
-    name: 'usage',
-    message: 'Provide test instructions:',
-    when: ({ confirmTest }) => confirmTest
-  },
-];
+    },
+    {
+      type: 'input',
+      name: 'usage',
+      message: 'Provide test instructions:',
+      when: ({ confirmTest }) => confirmTest
+    },
+    {
+      type: 'confirm',
+      name: 'confirmLicense',
+      message: 'Would you like to add a license?',
+      default: true
+    },
+    {
+      type: 'list',
+      name: 'license',
+      message: 'Choose a license:',
+      choices: ['MIT','Apache', 'GNU', 'ISC'], 
+      when: ({ confirmLicense }) => confirmLicense
+    },
+    {
+      type: 'input',
+      name: 'github',
+      message: 'Enter your GitHub Username (Required)',
+      validate: githubInput => {
+        if (githubInput) {
+          return true;
+        } else {
+          console.log('Please enter your GitHub username!');
+          return false;
+        }
+      }
+    },
+    {
+      type: 'input',
+      name: 'email',
+      message: 'Enter your Email address (Required)',
+      validate: emailInput => {
+        if (emailInput) {
+          return true;
+        } else {
+          console.log('Please enter your Email address!');
+          return false;
+        }
+      }
+    },
+  ]
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
