@@ -1,3 +1,3 @@
-# Test name
-  [![License](https://img.shields.io/badge/License-MIT-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
+# m
+  [![License: ISC](https://img.shields.io/badge/License-ISC-lightblue.svg)](https://opensource.org/licenses/ISC)
 

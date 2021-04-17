@@ -89,7 +89,7 @@ const questions = [
     type: 'list',
     name: 'licenseCheck',
     message: 'Choose a license:',
-    choices: ['MIT','Apache', 'GNU', 'ISC'], 
+    choices: ['MIT','Apache 2.0','BSD 3-Clause','GNU GPL v3','ISC'], 
     when: ({ confirmLicense }) => confirmLicense
   },
   {
@@ -126,7 +126,7 @@ function writeToFile(data) {
     if (err) {
       return console.log(err);
     } 
-    return console.log('Success! Your README has been created in the dist folder! ');
+    return console.log('Success! Your README has been created. Check the dist folder! ');
   });
 }
 

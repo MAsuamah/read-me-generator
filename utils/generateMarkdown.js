@@ -5,19 +5,23 @@ function renderLicenseBadge(license) {
     return '';
   } else if (license === 'MIT') {
     
-    return `[![License](https://img.shields.io/badge/License-${license}-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)`
+    return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
 
-  } else if (license === 'Apache') {
+  } else if (license === 'Apache 2.0') {
     
-    return `[![License](https://img.shields.io/badge/License-${license}%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
+    return `[![License](https://img.shields.io/badge/License-Apache%202.0-brightgreen.svg)](https://opensource.org/licenses/Apache-2.0)`
 
-  } else if (license === 'GNU') {
+  } else if (license === 'BSD 3-Clause') {
     
-    return `[![License](https://img.shields.io/badge/License-${license}-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)`
+    return `[![License](https://img.shields.io/badge/License-BSD%203--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)`
+
+  } else if (license === 'GNU GPL v3') {
+    
+    return `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-red.svg)](https://www.gnu.org/licenses/gpl-3.0)`
 
   } else if (license === 'ISC') {
     
-    return `[![License](https://img.shields.io/badge/License-${license}-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)`
+    return `[![License: ISC](https://img.shields.io/badge/License-ISC-lightblue.svg)](https://opensource.org/licenses/ISC)`
   }
 }
 
