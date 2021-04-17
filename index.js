@@ -87,7 +87,7 @@ const questions = [
   },
   {
     type: 'list',
-    name: 'license',
+    name: 'licenseCheck',
     message: 'Choose a license:',
     choices: ['MIT','Apache', 'GNU', 'ISC'], 
     when: ({ confirmLicense }) => confirmLicense
@@ -122,11 +122,11 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(data) {
-  fs.writeFile('./README.Md', data, err => {
+  fs.writeFile('./dist/README.Md', data, err => {
     if (err) {
       return console.log(err);
     } 
-    return console.log('Your README has been created!');
+    return console.log('Success! Your README has been created in the dist folder! ');
   });
 }
 
