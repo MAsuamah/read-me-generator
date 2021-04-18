@@ -30,8 +30,26 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
   if(!license) {
     return '';
-  }
+  } else if (license === 'MIT') {
+    
+    return `Licensed under the [MIT](https://choosealicense.com/licenses/mit/) license.`
 
+  } else if (license === 'Apache 2.0') {
+    
+    return `Licensed under the [Apache 2.0](https://choosealicense.com/licenses/apache-2.0/) license.`
+
+  } else if (license === 'BSD 3-Clause') {
+    
+    return `Licensed under the [BSD 3-Clause](https://choosealicense.com/licenses/bsd-3-clause-clear/) license.`
+
+  } else if (license === 'GNU GPL v3') {
+    
+    return `Licensed under the [GNU GPL v3](https://choosealicense.com/licenses/gpl-3.0/) license.`
+
+  } else if (license === 'ISC') {
+    
+    return `Licensed under the [ISC](https://choosealicense.com/licenses/isc/ license.`
+  }
 
 }
 
@@ -48,6 +66,7 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `# ${data.title}
   ${renderLicenseBadge(data.licenseCheck)}
+  ${renderLicenseLink(data.licenseCheck)}
 
 `;
 }
