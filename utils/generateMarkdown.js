@@ -1,9 +1,8 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if(!license) {
-    return '';
-  } else if (license === 'MIT') {
+
+   if (license === 'MIT') {
     
     return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
 
@@ -28,9 +27,8 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  if(!license) {
-    return '';
-  } else if (license === 'MIT') {
+
+  if (license === 'MIT') {
     
     return `Licensed under the [MIT](https://choosealicense.com/licenses/mit/) license.`
 
@@ -50,15 +48,13 @@ function renderLicenseLink(license) {
     
     return `Licensed under the [ISC](https://choosealicense.com/licenses/isc/ license.`
   }
-
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  if(!license) {
-    return '';
-  }
+
+  return renderLicenseLink(license)
 
 }
 
@@ -66,8 +62,29 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `# ${data.title}
   ${renderLicenseBadge(data.licenseCheck)}
-  ${renderLicenseLink(data.licenseCheck)}
-
+  ## Table of Contents
+  * [Description](#description)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
+  * [Questions](#questions)  
+  * [License](#license)   
+  ## Description
+  ${data.description}
+  ## Installation
+  ${data.install}
+  ## Usage
+  ${data.usage}
+  ## Contributing
+  ${data.contribute}
+  ## Tests
+  ${data.test}
+  ## Questions
+  You can reach me with any additional questions at ${data.email}.</br>
+  Visit my GitHub profile at [${data.github}](https://github.com/${data.github})
+  ## License 
+  ${renderLicenseSection(data.licenseCheck)}
 `;
 }
 

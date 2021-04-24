@@ -8,115 +8,48 @@ const questions = [
   {
     type: 'input',
     name: 'title',
-    message: 'What is the name of your project? (Required)',
-    validate: titleInput => {
-      if (titleInput) {
-        return true;
-      } else {
-        console.log('You need to enter a project name!');
-        return false;
-      }
-    }
+    message: 'What is the name of your project?'
   },
   {
     type: 'input',
     name: 'description',
-    message: 'Provide a description of the project: (Required)',
-    validate: descriptionInput => {
-      if (descriptionInput) {
-        return true;
-      } else {
-        console.log('You need to enter a project description!');
-        return false;
-      }
-    }
-  },
-  {
-    type: 'confirm',
-    name: 'confirmInstall',
-    message: 'Would you like to add installation instructions?',
-    default: true
+    message: 'Provide a description of the project:'
   },
   {
     type: 'input',
     name: 'install',
     message: 'Provide installation instructions:',
-    when: ({ confirmInstall }) => confirmInstall
-  },
-  {
-    type: 'confirm',
-    name: 'confirmUsageInfo',
-    message: 'Would you like to add usage instructions?',
-    default: true
   },
   {
     type: 'input',
     name: 'usage',
     message: 'Provide usage instructions:',
-    when: ({ confirmUsageInfo }) => confirmUsageInfo
-  },
-  {
-    type: 'confirm',
-    name: 'confirmContribution',
-    message: 'Would you like to add contribution guidelines?',
-    default: true
   },
   {
     type: 'input',
-    name: 'usage',
+    name: 'contribute',
     message: 'Provide contribution guidelines:',
-    when: ({ confirmContribution }) => confirmContribution
-  },
-  {
-  type: 'confirm',
-  name: 'confirmTest',
-  message: 'Would you like to add test instructions?',
-  default: true
   },
   {
     type: 'input',
-    name: 'usage',
+    name: 'test',
     message: 'Provide test instructions:',
-    when: ({ confirmTest }) => confirmTest
-  },
-  {
-    type: 'confirm',
-    name: 'confirmLicense',
-    message: 'Would you like to add a license?',
-    default: true
   },
   {
     type: 'list',
     name: 'licenseCheck',
-    message: 'Choose a license:',
+    message: 'Choose the license most relevant to your project:',
     choices: ['MIT','Apache 2.0','BSD 3-Clause','GNU GPL v3','ISC'], 
-    when: ({ confirmLicense }) => confirmLicense
   },
   {
     type: 'input',
     name: 'github',
-    message: 'Enter your GitHub Username (Required)',
-    validate: githubInput => {
-      if (githubInput) {
-        return true;
-      } else {
-        console.log('Please enter your GitHub username!');
-        return false;
-      }
-    }
+    message: 'Enter your GitHub Username:',
   },
   {
     type: 'input',
     name: 'email',
-    message: 'Enter your Email address (Required)',
-    validate: emailInput => {
-      if (emailInput) {
-        return true;
-      } else {
-        console.log('Please enter your Email address!');
-        return false;
-      }
-    }
+    message: 'Enter your Email address:',
   }
 ];
 
