@@ -23,3 +23,5 @@ Once the appropriate modules are installed, run the command `node index.js` to
 Once the prompts are completed, the README will be created in the dist folder in the read-me-generator folder root. You can now navigate to the dist folder and open the README.md file to see the generated README. It will look something like this:
 
 ![screencapture-github-MAsuamah-read-me-generator-tree-main-dist-2021-04-24-21_59_57](https://user-images.githubusercontent.com/77217156/115977717-90c52680-a548-11eb-84a7-403f343dc80d.png)
+
+This sample can be found in the dist folder when the repository is first cloned. It will be replaced once you create your own README.*
