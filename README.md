@@ -27,6 +27,7 @@ Once the prompts are completed, the README will be created in the dist folder in
 This sample README can be found in the dist folder when the repository is first cloned. It will be replaced once you create your own README.*
 
 ## Walkthrough Video
+https://drive.google.com/file/d/1Qg8vsx8lZJaJtrF7rGffAAlLmjsZy7nq/view?usp=sharing
 
 ## Built with
 Node.js
