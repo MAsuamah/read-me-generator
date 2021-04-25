@@ -11,7 +11,7 @@ Use this simple README generator built with node.js and markdown to quickly crea
 
 <img width="700" alt="Screen Shot 2021-04-24 at 8 44 21 PM" src="https://user-images.githubusercontent.com/77217156/115976904-8e5ece80-a540-11eb-9cf1-128fa052f14c.png">
 
-* cd into the read-me-generator folder and run the command `npm install` in your terminal while in the root of the read-me-generator folder. This will install the appropriate node modules needed to run the program.
+* cd into the read-me-generator folder and run the command `npm install` in your terminal. This will install the appropriate node modules needed to run the program.
 
 <img width="452" alt="Screen Shot 2021-04-24 at 8 45 51 PM" src="https://user-images.githubusercontent.com/77217156/115976917-aa627000-a540-11eb-99d7-2893f53c8125.png">
 
