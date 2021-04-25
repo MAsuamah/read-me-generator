@@ -46,7 +46,7 @@ function renderLicenseLink(license) {
 
   } else if (license === 'ISC') {
     
-    return `Licensed under the [ISC](https://choosealicense.com/licenses/isc/ license.`
+    return `Licensed under the [ISC](https://choosealicense.com/licenses/isc/) license.`
   }
 }
 
@@ -81,7 +81,7 @@ function generateMarkdown(data) {
   ## Tests
   ${data.test}
   ## Questions
-  You can reach me with any additional questions at ${data.email}.</br>
+  You can reach me with any additional questions at ${data.email}</br>
   Visit my GitHub profile at [${data.github}](https://github.com/${data.github})
   ## License 
   ${renderLicenseSection(data.licenseCheck)}
